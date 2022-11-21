@@ -2,44 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agarciaBCN Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>agarciaBCN Portfolio</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="./css/index.min.css">
 </head>
 
-<body>
+<body class="portfolio">
 
-    <main id="portfolio" class="container">
-        <h1 id="title"> 🙋‍♂️ Hello CIFO! I'm Antonio García!</h1>
-        <hr>
-        <p class="lead">
-            👨‍💻 I'm a Visual Designer & FrontEnd Engenieer from Barcelona.4
-        </p>
-        <p>
-            I am a design and technology enthusiast 💞 with a long career and an innovative spirit.
-        </p>
+	<main id="portfolio__main" class="portfolio__main container text-center bg-white ">
 
-        <p>
-            I started out as a graphic designer 👨‍🎨, but the use of computers made me discover a world full of
-            possibilities. 🤩
-        </p>
-        <p>
-            This has led me to collaborate with great companies and their technological projects, always using the
-            latest technologies. 🤖
-        </p>
-        <ul id="socialmedia">
-            <li>💼 This is my Portfolio agarciabcn.github.io</li>
-            <li>🗃 This is my GitHub, @agarciaBCN</li>
-            <li>👨‍💼 This is my LinkedIn @agarcia-bcn21</li>
-        </ul>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
-        defer></script>
+
+		<header class="portfolio__header">
+			<h1 id="title" class="portfolio__title">
+				<nobr>🙋‍♂️ Hello CIFO!
+					<wbr>I'm Antonio García!</nobr>
+			</h1>
+			<p class="portfolio__lead lead">
+				👨‍💻 a <strong>Visual Designer & FrontEnd Engenieer</strong> from Barcelona.
+			</p>
+		</header>
+		<div class="portfolio__content">
+			<picture class="portfolio__picto">
+				<img src="./img/undraw_laravel_and_vue_-59-tp.svg" alt="" sizes="" srcset="">
+			</picture>
+			<section class="portfolio__section">
+				<p>
+					I'm a design and technology enthusiast 💞 with a long career and an innovative spirit.
+				</p>
+
+				<p>
+					I started out as a graphic designer 👨‍🎨, but the use of computers made me discover a world full of
+					possibilities. 🤩
+				</p>
+				<p>
+					This has led me to collaborate with great companies and their technological projects, always using
+					the
+					latest technologies. 🤖
+				</p>
+
+			</section>
+		</div>
+		<footer id="footer" class="portfolio__footer">
+			<h2>Contact me:</h2>
+			<ul id="socialmedia" class="socialmedia">
+				<li class="socialmedia__item" title="This is my Portfolio ">💼 Portfolio <a
+						href="#">agarciabcn.github.io</a></li>
+				<li class="socialmedia__item" title="This is my GitHub">🗃 GitHub <a
+						href="http://github.com/agarciaBCN/" target="_blank" rel="noopener noreferrer">
+						@agarciaBCN</a>
+				</li>
+				<li class="socialmedia__item" title="This is my LinkedIn">👨‍💼 LinkedIn <a
+						href="https://www.linkedin.com/in/agarcia-bcn21/" target="_blank"
+						rel="noopener noreferrer">@agarcia-bcn21</a></li>
+			</ul>
+		</footer>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+		defer></script>
 
 
 </body>

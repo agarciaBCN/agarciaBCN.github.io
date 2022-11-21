@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Sono:wght@300;600&display=swap");
+body {
+  background-color: crimson;
+  min-height: 100vh;
+  font-family: "Sono", Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nabla, sans-serif;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-line: overline underline;
+          text-decoration-line: overline underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: tomato;
+          text-decoration-color: tomato;
+  color: tomato;
+  -moz-text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio__main {
+  max-width: 720px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: azure;
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 5px 5px 5px -2px white, inset -5px -5px 5px -2px rosybrown, 0 0 30px -8px azure, 8px 8px 32px -2px darkred;
+          box-shadow: inset 5px 5px 5px -2px white, inset -5px -5px 5px -2px rosybrown, 0 0 30px -8px azure, 8px 8px 32px -2px darkred;
+  font-size: 11pt;
+}
+.portfolio__title {
+  font-size: 2rem;
+}
+.portfolio__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.portfolio__content p {
+  font-size: 10pt;
+  margin-bottom: 10.5pt;
+}
+.portfolio__picto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 200px;
+  padding: 1rem;
+}
+.portfolio__section {
+  padding-left: 2em;
+}
+.portfolio a {
+  color: crimson;
+}
+.portfolio__footer {
+  padding-left: 50%;
+}
+
+.portfolio__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.portfolio__header__title {
+  margin-bottom: 6pt;
+}
+.portfolio__header__lead {
+  font-size: 3em;
+}
+.portfolio__header__lead strong {
+  text-shadow: 2px 2px #aaa;
+}
+
+.socialmedia {
+  list-style: none;
+  font-size: 10pt;
+}/*# sourceMappingURL=index.css.map */

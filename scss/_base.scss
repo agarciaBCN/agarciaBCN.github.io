@@ -1,0 +1,33 @@
+@use "./variables" as vars;
+
+body {
+	background-color: vars.$bg-color;
+
+	min-height: 100vh;
+
+	font-family: vars.$font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Nabla, sans-serif;
+}
+
+a {
+	color: vars.$light-color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+		text-decoration-line: overline underline;
+		text-decoration-style: dotted;
+		text-decoration-color: tomato;
+		color: tomato;
+		-moz-text-decoration-style: dotted;
+		text-decoration-thickness: 1px;
+	}
+}

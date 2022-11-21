@@ -1,0 +1,67 @@
+@use "./variables" as vars;
+
+.portfolio {
+	display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__main {
+		max-width: 720px;
+		padding: 2rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		background-color: vars.$light-color;
+		border-radius: 1rem;
+
+		// box-shadow: inset 5px 5px 0 darkgreys, 0px 0px 18px -2px pink;
+		box-shadow: inset 5px 5px 5px -2px white,
+			inset -5px -5px 5px -2px rosybrown, 0 0 30px -8px vars.$light-color,
+			8px 8px 32px -2px darkred;
+
+		font-size: 11pt;
+	}
+
+	&__title {
+		font-size: 2rem;
+	}
+
+	&__content {
+		// padding-left: 2em;
+
+		// width: 80%;
+		display: flex;
+
+		justify-content: center;
+
+		align-items: end;
+
+		p {
+			font-size: 10pt;
+			margin-bottom: 10.5pt;
+		}
+	}
+
+	&__picto {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-height: 200px;
+		padding: 1rem;
+	}
+
+	&__section {
+		padding-left: 2em;
+	}
+
+	a {
+		color: vars.$bg-color;
+	}
+
+	&__footer {
+		padding-left: 50%;
+		// width: 50%;
+	}
+}
