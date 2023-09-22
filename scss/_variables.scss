@@ -1,4 +1,18 @@
+@use "sass:math";
+
 $light-color: azure;
 $bg-color: crimson;
 
 $font-body: "Sono", Courier, monospace;
+
+$header-size: 5rem;
+$header-factor: 0.66;
+/* prettier-ignore */
+$header-size-map: (
+	"h1": $header-size - ($header-factor * 1 ),
+	"h2": $header-size - ($header-factor * 2 ),
+	"h3": $header-size - ($header-factor * 3 ),
+	"h4": $header-size - ($header-factor * 4 ),
+	"h5": $header-size - ($header-factor * 5 ),
+	"h6": $header-size - ($header-factor * 6 )
+);

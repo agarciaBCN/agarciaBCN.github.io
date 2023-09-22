@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./variables" as vars;
 
 body {
@@ -6,6 +7,9 @@ body {
 	min-height: 100vh;
 
 	font-family: vars.$font-body;
+	font-size: 1em;
+	line-height: 1.5em;
+	letter-spacing: -0.1ch;
 }
 
 h1,
@@ -15,6 +19,35 @@ h4,
 h5,
 h6 {
 	font-family: Nabla, sans-serif;
+}
+
+h1 {
+	font-size: map.get(vars.$header-size-map, "h1");
+	@debug map.get(vars.$header-size-map, "h1");
+	line-height: map.get(vars.$header-size-map, "h1") + 1.5;
+}
+
+h2 {
+	font-size: map.get(vars.$header-size-map, "h2");
+	line-height: map.get(vars.$header-size-map, "h2") + 1.5;
+}
+
+h3 {
+	font-size: map.get(vars.$header-size-map, "h3");
+	line-height: map.get(vars.$header-size-map, "h3") + 1.5;
+}
+
+h4 {
+	font-size: map.get(vars.$header-size-map, "h4");
+	line-height: map.get(vars.$header-size-map, "h4") + 1.5;
+}
+h5 {
+	font-size: map.get(vars.$header-size-map, "h5");
+	line-height: map.get(vars.$header-size-map, "h5") + 1.5;
+}
+h6 {
+	font-size: #{map.get(vars.$header-size-map, "h6")};
+	line-height: map.get(vars.$header-size-map, "h6") + 1.5;
 }
 
 a {
